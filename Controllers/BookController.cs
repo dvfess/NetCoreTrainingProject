@@ -27,11 +27,14 @@ namespace NetCoreTrainingProject.Controllers
             }
         };
 
+
+        // GET: /book/
         public IActionResult Index()
         {
             return View(_books);
         }
 
+        // GET: /book/details/{id}
         public IActionResult Details(int id)
         {
             Book book = _books.FirstOrDefault(x => x.Id == id);
