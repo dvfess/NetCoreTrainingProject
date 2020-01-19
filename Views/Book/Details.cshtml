@@ -1,0 +1,25 @@
+﻿@model NetCoreTrainingProject.Models.Book
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+@Html.ActionLink("На главную", "Index")
+<table>
+    <tr>
+        <td>ID</td>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td>@Model.Title</td>
+    </tr>
+    <tr>
+        <td>ISBN</td>
+        <td>@Model.ISBN</td>
+    </tr>
+    <tr>
+        <td>Author</td>
+        <td>@Model.Author</td>
+    </tr>
+</table>
